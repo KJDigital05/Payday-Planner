@@ -15,4 +15,4 @@ Personal finance planning application for workers with irregular incomes.
 - SQLite (Planned)
 
 ## Why I Built This 
-As a student who works part time as a delivery driver with irregular biweekly income, I wanted a budgeting system that could help me to automatically prioritise bills, debt repayments, savings goals and essential spending.
+As a student who works part time as a delivery driver with irregular fortnightly income, I wanted a budgeting system that could help me to automatically prioritise bills, debt repayments, savings goals and essential spending.
