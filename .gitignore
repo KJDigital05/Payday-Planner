@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+#Virtual Enviroments
+venv/
+
+#Financial Data
+user_data/
+*.db
+*.sqlite
+*.sqlite3
+
+#Enviroment Variables
+.env
+
+#MacOS
+.DS_Store
+
+#VS Code Settings
+.vscode/
