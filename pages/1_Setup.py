@@ -1,5 +1,8 @@
 import streamlit as st
 from datetime import timedelta
+from database import load_settings, save_settings
+
+settings = load_settings()
 
 st.title("Current Finances")
 
@@ -24,7 +27,17 @@ def get_next_paydays(start_date, frequency, count=10):
     elif frequency == "Monthly":
         current += timedelta(days=30)
 
-balance = st.number_input("Current Balance (£)")
+balance = st.number_input(
+    "Current Balance (£)", 
+    value=float(settings.get("balance", 0))
+)
 
 if st.button("Save"):
+    
+    save_settings = ({
+        "pay_frequency": pay_frequency,
+        "next_payday": str(next_payday),
+        "current_balance": balance
+    })
     st.success("Settings Saved.")
+
